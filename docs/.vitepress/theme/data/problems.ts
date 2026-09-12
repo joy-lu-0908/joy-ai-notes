@@ -206,6 +206,6 @@ export const problems: Problem[] = [
     complexity: '时间复杂度 O(B · L² · D)，Attention Matrix 的空间复杂度 O(B · L²)。',
 
     interviewTalk: '我先将输入 x 分别通过三个线性层得到 Q、K、V。然后计算 Q 和 K 转置的点积得到每个 token 与其他 token 的相关性，并除以 sqrt(d_k) 做缩放，再沿 key 维度做 softmax 得到 attention weights。最后用 attention weights 对 V 做加权求和，得到每个 token 融合全局上下文后的表示。'
-  }
+  },
 ]
 export const problemMap = Object.fromEntries(problems.map((p) => [p.id, p])) as Record<string, Problem>
