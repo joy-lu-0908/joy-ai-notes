@@ -139,7 +139,7 @@ onBeforeUnmount(() => {
             v-if="EditorComponent"
             v-model:value="code"
             language="python"
-            theme="vs-dark"
+            theme="vs"
             :options="editorOptions"
           />
           <div v-else style="padding: 18px">正在加载代码编辑器…</div>
@@ -152,7 +152,7 @@ onBeforeUnmount(() => {
             :original="code"
             :modified="problem.solutionCode"
             language="python"
-            theme="vs-dark"
+            theme="vs"
             :options="{ ...editorOptions, readOnly: true, renderSideBySide: true }"
           />
           <div v-else style="padding: 18px">正在加载对比视图…</div>
@@ -163,7 +163,7 @@ onBeforeUnmount(() => {
         v-else
         v-model="code"
         aria-label="代码编辑器备用模式"
-        style="width:100%;min-height:420px;padding:14px;font-family:monospace;background:#111;color:#eee;border-radius:10px"
+        style="width:100%;min-height:420px;padding:14px;font-family:monospace;background:#f3eee7;color:#3f3936;border:1px solid #d4ccc1;border-radius:10px"
       />
 
       <div class="practice-actions">
