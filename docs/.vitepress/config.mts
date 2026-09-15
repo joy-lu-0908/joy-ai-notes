@@ -20,6 +20,7 @@ export default defineConfig({
       '/algorithm/': [
         {
           text: 'LeetCode',
+          collapsed: false,
           items: [
             { text: '题库首页', link: '/algorithm/' },
             { text: '1. Two Sum', link: '/algorithm/problems/two-sum' },
@@ -31,12 +32,29 @@ export default defineConfig({
         },
         {
           text: 'AI Handwriting',
+          collapsed: false,
           items: [
             { text: 'AI-01. Self-Attention', link: '/algorithm/problems/self-attention' },
             { text: 'AI-02. Cross-Attention', link: '/algorithm/problems/cross-attention' },
             { text: 'AI-03. Multi-Head Attention', link: '/algorithm/problems/multi-head-attention' },
             { text: 'AI-04. MHA + KV Cache', link: '/algorithm/problems/mha-kv-cache' },
-            { text: 'AI-05. Stable Softmax', link: '/algorithm/problems/stable-softmax' }
+            { text: 'AI-05. Stable Softmax', link: '/algorithm/problems/stable-softmax' },
+            { text: 'AI-06. RMSNorm', link: '/algorithm/problems/rmsnorm' }
+          ]
+        },
+        {
+          text: 'Math & Optimization',
+          collapsed: true,
+          items: [
+            { text: 'MATH-01. 梯度下降与Newton法求平方根', link: '/algorithm/problems/gradient-descent-newton' }
+          ]
+        },
+        {
+          text: 'Recommendation System',
+          collapsed: true,
+          items: [
+            { text: 'REC-01. DCN-V2 Cross Network', link: '/algorithm/problems/dcn-v2' },
+            { text: 'REC-02. Simplified HSTU-style Block', link: '/algorithm/problems/hstu-block' }
           ]
         }
       ]
